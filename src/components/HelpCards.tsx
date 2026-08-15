@@ -19,8 +19,8 @@ export default function HelpCards() {
           <h3>{t.legalTitle}</h3>
           <p>{t.legalText}</p>
         </div>
-        <Link className="btn btn-ghost" to="/contact">
-          {t.legalLink}
+        <Link className="link-arrow" to="/contact">
+          {t.legalLink} →
         </Link>
       </article>
     </div>
