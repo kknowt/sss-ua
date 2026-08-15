@@ -4,6 +4,7 @@ import PageHero from "../components/PageHero";
 import Reveal from "../components/Reveal";
 import { useLang } from "../context/LangContext";
 import { activities } from "../data/content";
+import { asset } from "../lib/asset";
 
 export default function About() {
   const { lang, t } = useLang();
@@ -13,7 +14,7 @@ export default function About() {
       <section className="section">
         <div className="wrap split">
           <Reveal>
-            <img src="/images/about.jpg" alt="" />
+            <img src={asset("images/about.jpg")} alt="" />
           </Reveal>
           <Reveal delay={0.1}>
             <div className="prose">

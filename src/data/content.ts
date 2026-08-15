@@ -1,3 +1,5 @@
+import { asset } from "../lib/asset";
+
 export type Lang = "uk" | "en";
 
 export const socials = [
@@ -88,7 +90,7 @@ export const news = [
   {
     slug: "merefa-idp-council-medical-aid",
     date: "12.08.2026",
-    image: "/images/news1.png",
+    image: asset("images/news1.png"),
     type: { uk: "Новини", en: "News" },
     region: { uk: "Харківська область", en: "Kharkiv oblast" },
     title: {
@@ -115,7 +117,7 @@ export const news = [
   {
     slug: "kropyvnytskyi-social-change-forum",
     date: "11.08.2026",
-    image: "/images/news2.png",
+    image: asset("images/news2.png"),
     type: { uk: "Новини", en: "News" },
     region: { uk: "Кіровоградська область", en: "Kirovohrad oblast" },
     title: {
@@ -142,7 +144,7 @@ export const news = [
   {
     slug: "idp-registration-recommendations",
     date: "07.08.2026",
-    image: "/images/news3.jpg",
+    image: asset("images/news3.jpg"),
     type: { uk: "Новини", en: "News" },
     region: { uk: "Вся країна", en: "Nationwide" },
     title: {
@@ -169,7 +171,7 @@ export const news = [
   {
     slug: "seven-legislative-changes-for-idps",
     date: "05.08.2026",
-    image: "/images/news4.png",
+    image: asset("images/news4.png"),
     type: { uk: "Новини", en: "News" },
     region: { uk: "Вся країна", en: "Nationwide" },
     title: {
@@ -196,7 +198,7 @@ export const news = [
   {
     slug: "what-the-foundation-has-done-since-2015",
     date: "05.08.2026",
-    image: "/images/default-news.jpg",
+    image: asset("images/default-news.jpg"),
     type: { uk: "Новини", en: "News" },
     region: { uk: "Вся країна", en: "Nationwide" },
     title: {
@@ -223,7 +225,7 @@ export const news = [
   {
     slug: "tool-rental-accession-agreement",
     date: "10.08.2026",
-    image: "/images/default-news.jpg",
+    image: asset("images/default-news.jpg"),
     type: { uk: "Корисні матеріали", en: "Useful materials" },
     region: { uk: "Вся країна", en: "Nationwide" },
     title: {

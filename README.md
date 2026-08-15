@@ -1,22 +1,25 @@
 # Благодійний фонд «Стабілізейшен суппорт сервісез»
 
-Modern remake of [sss-ua.org](https://sss-ua.org/) — a Ukrainian charity working to overcome the social consequences of war.
+Modern remake of [sss-ua.org](https://sss-ua.org/). Live demo: https://kknowt.github.io/sss-ua/
 
-## Stack
+## GitHub Pages
 
-- Vite
-- React + TypeScript
-- React Router
-- Framer Motion
+The site is a Vite app, so GitHub must serve the **built files**, not the repository source. A blank white page means Pages is publishing the project root (`index.html` that points at `/src/main.tsx`).
 
-## Run
+Use one of these settings:
+
+1. **Folder `/docs`** on this branch (fastest with the current “Deploy from a branch” setup)
+2. **Source: GitHub Actions** (uses `.github/workflows/deploy-pages.yml`)
+3. **Branch `gh-pages`**, folder `/ (root)` (the workflow also publishes that branch)
+
+Then open https://kknowt.github.io/sss-ua/
+
+## Run locally
 
 ```bash
 npm install
 npm run dev
 ```
-
-Build:
 
 ```bash
 npm run build

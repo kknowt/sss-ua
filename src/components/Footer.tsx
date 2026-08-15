@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { useLang } from "../context/LangContext";
+import { asset } from "../lib/asset";
 import { socials } from "../data/content";
 
 export default function Footer() {
@@ -29,7 +30,7 @@ export default function Footer() {
         </div>
         <div className="footer-mid">
           <Link to="/" className="logo">
-            <img src="/logo.png" alt="" />
+            <img src={asset("logo.png")} alt="" />
             <span className="logo-text">
               <b>SSS</b>
               <span>{t.orgShort}</span>

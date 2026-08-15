@@ -2,6 +2,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import { FormEvent, useEffect, useState } from "react";
 import { Link, NavLink, useLocation, useNavigate } from "react-router-dom";
 import { useLang } from "../context/LangContext";
+import { asset } from "../lib/asset";
 
 export default function Header() {
   const { lang, setLang, t } = useLang();
@@ -35,7 +36,7 @@ export default function Header() {
     <header className={`header ${scrolled ? "scrolled" : ""}`}>
       <div className="wrap header-inner">
         <Link to="/" className="logo" aria-label={t.orgShort}>
-          <img src="/logo.png" alt="" />
+          <img src={asset("logo.png")} alt="" />
           <span className="logo-text">
             <b>SSS</b>
             <span>{t.orgShort}</span>

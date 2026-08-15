@@ -6,6 +6,7 @@ import Reveal from "../components/Reveal";
 import UkraineMap from "../components/UkraineMap";
 import { useLang } from "../context/LangContext";
 import { activities, news, projects, stats } from "../data/content";
+import { asset } from "../lib/asset";
 
 export default function Home() {
   const { lang, t } = useLang();
@@ -35,7 +36,7 @@ export default function Home() {
           </div>
           <div className="hero-visual">
             <div className="hero-photo">
-              <img src="/images/hero.jpg" alt="" />
+              <img src={asset("images/hero.jpg")} alt="" />
             </div>
             <div className="hero-badge">
               <b>2015–2026</b>
