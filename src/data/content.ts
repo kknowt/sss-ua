@@ -1,0 +1,705 @@
+export type Lang = "uk" | "en";
+
+export const socials = [
+  { name: "Facebook", href: "https://www.facebook.com/stabilizationsupportservices" },
+  { name: "Instagram", href: "https://www.instagram.com/stabilizationsupportservices/" },
+  { name: "X", href: "https://twitter.com/SSS_Ukraine" },
+  { name: "YouTube", href: "https://www.youtube.com/channel/UC3nkNFUE6uUldRGf1KTfxqw" },
+  { name: "Telegram", href: "https://t.me/sss_ukraine" },
+];
+
+export const stats = [
+  { value: 533905, uk: "людей отримали гуманітарну допомогу", en: "people received humanitarian assistance" },
+  { value: 305558, uk: "індивідуальні продуктові, медичні, гігієнічні набори та набори НПД роздано", en: "food, medical, hygiene and NFI kits distributed" },
+  { value: 2116, uk: "об’єктів відновлено після пошкоджень різного ступеня", en: "facilities repaired after damage of various severity" },
+  { value: 222185, uk: "людей отримали юридичну та соціальну допомогу", en: "people received legal and social support" },
+];
+
+export const activities = [
+  { uk: "Доставка гуманітарної допомоги", en: "Delivery of humanitarian aid" },
+  { uk: "Підтримка внутрішньо переміщених осіб в Україні", en: "Support for internally displaced persons in Ukraine" },
+  { uk: "Багатопрофільна підтримка державних органів соціального захисту", en: "Support for government agencies in social protection" },
+  { uk: "Інтеграція та розвиток громад ВПО", en: "Integration and development of IDP communities" },
+  { uk: "Консультування фахівців соцзахисту та НУО", en: "Advising social protection specialists and NGOs" },
+  { uk: "Адвокація прав і свобод ВПО", en: "Advocacy for the rights and freedoms of IDPs" },
+  { uk: "Розробка законодавчих змін", en: "Development of legislative changes" },
+  { uk: "Робота з індивідуальними кейсами та гаряча лінія ВПО", en: "Individual IDP casework and hotline support" },
+];
+
+export const history = [
+  {
+    year: "2015",
+    uk: "У березні 2015 року в Україні у відповідь на гуманітарні наслідки російської агресії та появу сотень тисяч внутрішньо переміщених людей за підтримки канадської організації Stabilization Support Services почала діяти ініціативна група. Одним із перших напрямів стала підтримка Міністерства соціальної політики та розбудова мережі радників і радниць з питань ВПО в усіх областях України.",
+    en: "In March 2015, an initiative group began work in Ukraine in response to the humanitarian consequences of Russian aggression and the appearance of hundreds of thousands of internally displaced people, with support from the Canadian NGO Stabilization Support Services. One of its first directions was supporting the Ministry of Social Policy and building a network of IDP advisers across all regions of Ukraine.",
+  },
+  {
+    year: "2016",
+    uk: "14 червня 2016 року зареєстровано Благодійний фонд «Стабілізейшен Суппорт Сервісез» — українську організацію, що реагуватиме на гуманітарні виклики, підтримуватиме систему соціального захисту й розвиватиме політичні ініціативи, спрямовані на захист прав людей, постраждалих від війни.",
+    en: "On 14 June 2016 the Charity Foundation “Stabilization Support Services” was registered as a Ukrainian organization that would respond to humanitarian challenges, support the social protection system, and develop policy initiatives to protect the rights of people affected by war.",
+  },
+  {
+    year: "2017",
+    uk: "Фонд почав системно працювати у сфері аналізу соціальної політики та адвокації прав внутрішньо переміщених людей. Команда досліджувала потреби ВПО, готувала аналітичні матеріали для державних органів і брала участь у підготовці рішень щодо доступу ВПО до соціального захисту, житла, працевлаштування й адміністративних послуг.",
+    en: "The Foundation began systematic work on social policy analysis and advocacy for internally displaced people. The team researched IDP needs, prepared analytical materials for public authorities, and took part in decisions that improved IDP access to social protection, housing, employment, and administrative services.",
+  },
+  {
+    year: "2018",
+    uk: "Фонд посилив співпрацю з органами місцевого самоврядування. Команда працювала з громадами, які приймали внутрішньо переміщених людей, допомагала адаптувати соціальні послуги до нових потреб і почала реінтегрувати ветеранів.",
+    en: "The Foundation strengthened cooperation with local governments. The team worked with communities hosting internally displaced people, helped adapt social services to new needs, and began reintegrating veterans.",
+  },
+  {
+    year: "2019",
+    uk: "Фонд ініціював створення Рад з питань внутрішньо переміщених осіб — консультативно-дорадчих органів при органах місцевого самоврядування. Перші ради ВПО створено у п’яти областях — Донецькій, Луганській, Харківській, Дніпропетровській та Запорізькій.",
+    en: "The Foundation initiated IDP Councils — advisory bodies under local governments. The first councils were created in five oblasts: Donetsk, Luhansk, Kharkiv, Dnipropetrovsk, and Zaporizhzhia.",
+  },
+  {
+    year: "2020",
+    uk: "Сформовано базові підходи до функціонування рад ВПО як інструменту діалогу між переселенцями та місцевою владою. Фонд допомагав громадам створювати ради, навчав їхніх членів і розробив перші методичні рекомендації.",
+    en: "Core approaches to IDP Councils as a dialogue tool between displaced people and local authorities were formed. The Foundation helped communities create councils, trained members, and developed the first methodological recommendations.",
+  },
+  {
+    year: "2021",
+    uk: "Розроблено нормативні та методичні документи, що регулюють роботу рад ВПО. Затверджено план розвитку організації до 2024 року. Протягом року понад 10 тисяч людей отримали гуманітарну допомогу.",
+    en: "Regulatory and methodological documents for IDP Councils were developed. The organizational development plan to 2024 was approved. During the year, more than 10,000 people received humanitarian assistance.",
+  },
+  {
+    year: "2022",
+    uk: "Після повномасштабного вторгнення фонд переглянув пріоритети. Сформовано гуманітарний напрям. Понад 325 тисяч людей отримали гуманітарну допомогу, розповсюджено понад 165 тисяч наборів, понад 16 тисяч людей отримали правову допомогу. Створено понад 60 нових Рад ВПО.",
+    en: "After the full-scale invasion the Foundation revised its priorities and formed a humanitarian direction. More than 325,000 people received humanitarian aid, over 165,000 kits were distributed, and more than 16,000 people received legal assistance. Over 60 new IDP Councils were created.",
+  },
+  {
+    year: "2023",
+    uk: "Фонд поєднав гуманітарне реагування з довгостроковими програмами. Більш ніж 121 тисяча людей отримала гуманітарну допомогу, понад 33 тисячі — правову підтримку. Виконано 760 ремонтів у соціальних установах, створено 131 нову раду ВПО.",
+    en: "The Foundation combined humanitarian response with longer-term programs. More than 121,000 people received humanitarian aid and over 33,000 received legal support. 760 repairs were completed in social institutions and 131 new IDP Councils were created.",
+  },
+  {
+    year: "2024",
+    uk: "Мережа Рад ВПО охопила понад 1000 громад по всій Україні — одна з найбільших у Європі систем участі переселенців у місцевому врядуванні. Проведено перше всеукраїнське мапування рад ВПО. Понад 65 000 людей отримали гуманітарну підтримку, виконано 825 ремонтів.",
+    en: "The IDP Council network covered more than 1,000 communities across Ukraine — one of Europe’s largest systems of displaced people’s participation in local governance. The first nationwide mapping of IDP Councils was completed. Over 65,000 people received humanitarian support and 825 repairs were completed.",
+  },
+  {
+    year: "2025",
+    uk: "Рік організаційного розвитку та стратегічного планування. Затверджено стратегії підтримки Рад ВПО, соціального захисту, прихистку та WASH. Понад 44 тисячі людей отримали гуманітарну допомогу, майже 19 тисяч скористалися послугами пралень, душових і соціальних хабів.",
+    en: "A year of organizational development and strategic planning. Strategies for IDP Councils, social protection, shelter, and WASH were approved. More than 44,000 people received humanitarian aid, and nearly 19,000 used laundry, shower, and social hub services.",
+  },
+];
+
+export const news = [
+  {
+    slug: "merefa-idp-council-medical-aid",
+    date: "12.08.2026",
+    image: "/images/news1.png",
+    type: { uk: "Новини", en: "News" },
+    region: { uk: "Харківська область", en: "Kharkiv oblast" },
+    title: {
+      uk: "Успіхи рад ВПО: у Мерефі затвердили порядок надання грошової допомоги на медичні засоби",
+      en: "Successes of IDP Councils: Merefa approves financial assistance for medical supplies",
+    },
+    excerpt: {
+      uk: "Рада ВПО Мереф’янської громади домоглася затвердження порядку грошової допомоги на медичні засоби для внутрішньо переміщених людей.",
+      en: "The Merefa community IDP Council secured approval of a procedure for financial assistance for medical supplies for internally displaced people.",
+    },
+    body: {
+      uk: [
+        "У Мереф’янській громаді Харківської області Рада з питань внутрішньо переміщених осіб домоглася ухвалення порядку надання грошової допомоги на медичні засоби. Це рішення стало результатом системної адвокації членкинь і членів ради та діалогу з місцевою владою.",
+        "Порядок визначає прозорі критерії отримання допомоги, перелік документів і механізм розгляду звернень. Він орієнтований на людей, які потребують підтримки для лікування, реабілітації чи забезпечення засобами медичного призначення.",
+        "Команда фонду «Стабілізейшен суппорт сервісез» супроводжує ради ВПО в громадах України: навчає адвокації, допомагає готувати проєкти рішень і поширює успішні практики. Досвід Мерефи показує, як консультативно-дорадчий орган може впливати на реальні зміни в житті переселенок і переселенців.",
+      ],
+      en: [
+        "In the Merefa community of Kharkiv oblast, the IDP Council secured adoption of a procedure for financial assistance for medical supplies. The decision followed systematic advocacy by council members and dialogue with local authorities.",
+        "The procedure sets transparent eligibility criteria, a list of documents, and a mechanism for reviewing applications. It is aimed at people who need support for treatment, rehabilitation, or medical devices.",
+        "The Stabilization Support Services team supports IDP Councils across Ukraine: training in advocacy, helping prepare draft decisions, and sharing successful practices. Merefa shows how an advisory body can deliver real change in the lives of displaced people.",
+      ],
+    },
+  },
+  {
+    slug: "kropyvnytskyi-social-change-forum",
+    date: "11.08.2026",
+    image: "/images/news2.png",
+    type: { uk: "Новини", en: "News" },
+    region: { uk: "Кіровоградська область", en: "Kirovohrad oblast" },
+    title: {
+      uk: "Пошук сталих рішень для літніх і маломобільних ВПО: в Кропивницькому відбувся форум соціальних змін",
+      en: "Seeking sustainable solutions for older and less mobile IDPs: a social change forum was held in Kropyvnytskyi",
+    },
+    excerpt: {
+      uk: "У Кропивницькому зібралися представники громад, рад ВПО та соціальних служб, щоб шукати сталі рішення для літніх і маломобільних переселенців.",
+      en: "Community representatives, IDP Councils, and social services gathered in Kropyvnytskyi to look for sustainable solutions for older and less mobile displaced people.",
+    },
+    body: {
+      uk: [
+        "У Кропивницькому відбувся форум соціальних змін, присвячений потребам літніх і маломобільних внутрішньо переміщених людей. Учасники обговорили доступ до соціальних послуг, адаптацію житла, транспортну доступність і роль рад ВПО у плануванні місцевих рішень.",
+        "Форум зібрав представників органів влади, соціальних установ, громадських організацій і самих переселенців. Окрему увагу приділили практикам, які вже працюють у громадах: соціальні хаби, мобільні бригади, програми грошової допомоги та супровід людей з інвалідністю.",
+        "Благодійний фонд «Стабілізейшен суппорт сервісез» системно підтримує такі діалоги: від навчальних програм для рад ВПО до адвокації змін у системі соціального захисту.",
+      ],
+      en: [
+        "A social change forum in Kropyvnytskyi focused on the needs of older and less mobile internally displaced people. Participants discussed access to social services, housing adaptation, transport accessibility, and the role of IDP Councils in local decision-making.",
+        "The forum brought together public authorities, social institutions, civil society, and displaced people themselves. Particular attention was paid to practices already working in communities: social hubs, mobile teams, cash assistance, and support for people with disabilities.",
+        "Charity Foundation Stabilization Support Services systematically supports such dialogues: from training programs for IDP Councils to advocacy for changes in the social protection system.",
+      ],
+    },
+  },
+  {
+    slug: "idp-registration-recommendations",
+    date: "07.08.2026",
+    image: "/images/news3.jpg",
+    type: { uk: "Новини", en: "News" },
+    region: { uk: "Вся країна", en: "Nationwide" },
+    title: {
+      uk: "Рекомендації щодо оновлення порядку про облік ВПО у зв’язку зі змінами до законодавства",
+      en: "Recommendations on updating the IDP registration procedure in light of legislative changes",
+    },
+    excerpt: {
+      uk: "Фонд підготував рекомендації для органів влади щодо оновлення порядку обліку внутрішньо переміщених осіб.",
+      en: "The Foundation prepared recommendations for public authorities on updating the IDP registration procedure.",
+    },
+    body: {
+      uk: [
+        "Зміни до законодавства про внутрішнє переміщення вимагають оновлення місцевих порядків обліку ВПО. Фонд підготував практичні рекомендації, які допомагають громадам узгодити свої процедури з новими нормами.",
+        "Документ пояснює ключові зміни, пропонує формулювання для рішень місцевих рад і нагадує про права людей, які звертаються по довідку ВПО та соціальні виплати.",
+        "Рекомендації призначені для управлінь соціального захисту, рад ВПО та органів місцевого самоврядування по всій Україні.",
+      ],
+      en: [
+        "Changes to internal displacement legislation require updates to local IDP registration procedures. The Foundation prepared practical recommendations to help communities align their processes with the new rules.",
+        "The document explains key changes, suggests wording for local council decisions, and recalls the rights of people applying for IDP certificates and social payments.",
+        "The recommendations are intended for social protection departments, IDP Councils, and local governments across Ukraine.",
+      ],
+    },
+  },
+  {
+    slug: "seven-legislative-changes-for-idps",
+    date: "05.08.2026",
+    image: "/images/news4.png",
+    type: { uk: "Новини", en: "News" },
+    region: { uk: "Вся країна", en: "Nationwide" },
+    title: {
+      uk: "Законодавчі новації: 7 ключових змін, які очікують внутрішньо переміщених людей",
+      en: "Legislative updates: 7 key changes awaiting internally displaced people",
+    },
+    excerpt: {
+      uk: "Короткий огляд семи законодавчих змін, які впливають на права, виплати та облік внутрішньо переміщених осіб.",
+      en: "A short overview of seven legislative changes that affect the rights, payments, and registration of internally displaced people.",
+    },
+    body: {
+      uk: [
+        "У 2026 році набули чинності кілька змін, які безпосередньо впливають на життя внутрішньо переміщених людей. Фонд зібрав сім ключових новацій: від обліку та виплат до доступу до житла і соціальних послуг.",
+        "Матеріал пояснює, що змінюється на практиці, куди звертатися і як ради ВПО можуть допомогти громадам упровадити нові норми без шкоди для отримувачів допомоги.",
+        "Ми продовжуємо адвокацію на національному рівні, щоб політика щодо ВПО залишалася людяною, зрозумілою і справедливою.",
+      ],
+      en: [
+        "In 2026 several changes entered into force that directly affect internally displaced people. The Foundation collected seven key updates: from registration and payments to access to housing and social services.",
+        "The material explains what changes in practice, where to apply, and how IDP Councils can help communities implement the new rules without harming aid recipients.",
+        "We continue advocacy at the national level so that IDP policy remains humane, clear, and fair.",
+      ],
+    },
+  },
+  {
+    slug: "what-the-foundation-has-done-since-2015",
+    date: "05.08.2026",
+    image: "/images/default-news.jpg",
+    type: { uk: "Новини", en: "News" },
+    region: { uk: "Вся країна", en: "Nationwide" },
+    title: {
+      uk: "Що наш Фонд зробив для країни з 2015 року",
+      en: "What our Foundation has done for the country since 2015",
+    },
+    excerpt: {
+      uk: "Короткий огляд десяти років роботи фонду: від мережі радників ВПО до гуманітарного реагування та національної мережі рад ВПО.",
+      en: "A brief overview of ten years of the Foundation’s work: from the IDP adviser network to humanitarian response and a nationwide IDP Council network.",
+    },
+    body: {
+      uk: [
+        "З 2015 року фонд пройшов шлях від ініціативної групи до однієї з ключових українських організацій, що працюють із соціальними наслідками війни.",
+        "Ми підтримали сотні тисяч людей гуманітарною, правовою та соціальною допомогою, відновили тисячі об’єктів соціальної інфраструктури і разом із громадами збудували мережу рад ВПО, яка сьогодні охоплює понад тисячу громад.",
+        "Ця історія — про людей: команду майже з 200 фахівців у всіх регіонах, волонтерів, партнерів і тих, хто щодня довіряє нам свою потребу в підтримці.",
+      ],
+      en: [
+        "Since 2015 the Foundation has grown from an initiative group into one of Ukraine’s key organizations working on the social consequences of war.",
+        "We have supported hundreds of thousands of people with humanitarian, legal, and social assistance, restored thousands of social infrastructure facilities, and together with communities built an IDP Council network that now covers more than a thousand communities.",
+        "This story is about people: a team of almost 200 specialists in every region, volunteers, partners, and those who trust us every day with their need for support.",
+      ],
+    },
+  },
+  {
+    slug: "tool-rental-accession-agreement",
+    date: "10.08.2026",
+    image: "/images/default-news.jpg",
+    type: { uk: "Корисні матеріали", en: "Useful materials" },
+    region: { uk: "Вся країна", en: "Nationwide" },
+    title: {
+      uk: "Договір-приєднання про надання благодійної допомоги у вигляді послуг із безоплатного користування будівельним приладдям",
+      en: "Accession agreement on charitable assistance in the form of free use of construction tools",
+    },
+    excerpt: {
+      uk: "Типовий договір-приєднання для отримання будівельного приладдя та електроприладів у строкове безоплатне користування.",
+      en: "A standard accession agreement for receiving construction tools and electrical appliances for free fixed-term use.",
+    },
+    body: {
+      uk: [
+        "Фонд надає благодійну допомогу у вигляді послуг із надання в строкове безоплатне користування будівельного приладдя та електроприладів. Щоб отримати допомогу, потрібно приєднатися до типового договору.",
+        "Документ визначає умови користування, відповідальність сторін і порядок повернення обладнання. Це дозволяє швидко відновлювати житло та соціальні об’єкти в громадах, постраждалих від війни.",
+        "Ознайомитися з договором і подати заявку можна через форму звернення на сайті або за адресою info@sss-ua.org.",
+      ],
+      en: [
+        "The Foundation provides charitable assistance in the form of construction tools and electrical appliances for free fixed-term use. To receive assistance, applicants join a standard accession agreement.",
+        "The document sets the terms of use, the parties’ responsibilities, and the procedure for returning equipment. This helps communities affected by war restore housing and social facilities more quickly.",
+        "You can review the agreement and apply through the contact form on the website or at info@sss-ua.org.",
+      ],
+    },
+  },
+];
+
+export const projects = [
+  {
+    slug: "social-protection-2026",
+    date: "12.03.2026",
+    status: "active" as const,
+    category: "advocacy",
+    tags: { uk: ["Ради ВПО", "Адвокація"], en: ["IDP Councils", "Advocacy"] },
+    title: {
+      uk: "Підтримка спроможності державних установ та місцевих громад у зміцненні системи соціального захисту в Україні | 2026",
+      en: "Support to the capacity of government institutions and local communities to strengthen social protection systems in Ukraine | 2026",
+    },
+    summary: {
+      uk: "Проєкт за підтримки УВКБ ООН: розвиток рад ВПО, менторство, форуми та зміцнення системи соціального захисту.",
+      en: "A UNHCR-supported project: IDP Council development, mentoring, forums, and strengthening the social protection system.",
+    },
+  },
+  {
+    slug: "democratize-the-future",
+    date: "19.01.2026",
+    status: "active" as const,
+    category: "advocacy",
+    tags: { uk: ["Молодь", "Освіта"], en: ["Youth", "Education"] },
+    title: {
+      uk: "Democratize the Future — інноваційна навчальна програма для молоді",
+      en: "Democratize the Future — an innovative learning program for youth",
+    },
+    summary: {
+      uk: "Навчальна програма, що допомагає молоді розвивати громадянські навички, критичне мислення та участь у житті громад.",
+      en: "A learning program that helps young people develop civic skills, critical thinking, and participation in community life.",
+    },
+  },
+  {
+    slug: "media-mind",
+    date: "05.11.2025",
+    status: "active" as const,
+    category: "education",
+    tags: { uk: ["Медіаграмотність"], en: ["Media literacy"] },
+    title: {
+      uk: "Школа контенту Media Mind: споживай і створюй відповідально",
+      en: "Media Mind content school: consume and create responsibly",
+    },
+    summary: {
+      uk: "Освітня програма з медіаграмотності та відповідального створення контенту для молоді та громадських активістів.",
+      en: "An educational program on media literacy and responsible content creation for youth and civic activists.",
+    },
+  },
+  {
+    slug: "south-east-protection-2026",
+    date: "26.05.2026",
+    status: "active" as const,
+    category: "humanitarian",
+    tags: { uk: ["Гуманітарне реагування"], en: ["Humanitarian response"] },
+    title: {
+      uk: "Життєво необхідна відповідь на потреби захисту та гуманітарні потреби постраждалого населення на Півдні та Південному Сході",
+      en: "Lifesaving response to protection and humanitarian needs of conflict-affected people in the South and South-East",
+    },
+    summary: {
+      uk: "Оперативне гуманітарне реагування, захист і базова допомога людям у громадах Півдня та Південного Сходу України.",
+      en: "Rapid humanitarian response, protection, and basic assistance for people in communities of southern and south-eastern Ukraine.",
+    },
+  },
+  {
+    slug: "educational-board-games",
+    date: "22.08.2023",
+    status: "active" as const,
+    category: "education",
+    tags: { uk: ["Геймифікація", "Правопросвітництво"], en: ["Gamification", "Legal education"] },
+    title: {
+      uk: "Просвітницькі настільні ігри",
+      en: "Educational board games",
+    },
+    summary: {
+      uk: "Ігри «Бути жінкою», «Переселенська блуканина», «Утопія: Бути рівними» та At The Crossroads для роботи з чутливими соціальними темами.",
+      en: "Games including Being a Woman, Displacement Wander, Utopia: Being Equal, and At The Crossroads for work with sensitive social topics.",
+    },
+  },
+  {
+    slug: "legal-access-idp-councils",
+    date: "07.05.2026",
+    status: "active" as const,
+    category: "advocacy",
+    tags: { uk: ["Ради ВПО", "Правова допомога"], en: ["IDP Councils", "Legal aid"] },
+    title: {
+      uk: "Покращення доступу до правового захисту, посилення ролі громад і Рад ВПО",
+      en: "Improving access to legal protection and strengthening communities and IDP Councils",
+    },
+    summary: {
+      uk: "Проєкт за підтримки NRC: юридична допомога, адвокація рад ВПО та покращення умов проживання в місцях тимчасового проживання.",
+      en: "An NRC-supported project: legal aid, IDP Council advocacy, and better living conditions in collective sites.",
+    },
+  },
+  {
+    slug: "social-protection-2025",
+    date: "20.01.2025",
+    status: "completed" as const,
+    category: "advocacy",
+    tags: { uk: ["Ради ВПО", "Адвокація"], en: ["IDP Councils", "Advocacy"] },
+    title: {
+      uk: "Підтримка спроможності державних установ та місцевих громад | 2025",
+      en: "Support to the capacity of government institutions and local communities | 2025",
+    },
+    summary: {
+      uk: "Завершений цикл підтримки рад ВПО, інституцій соцзахисту та адвокації на національному й місцевому рівнях.",
+      en: "A completed cycle of support for IDP Councils, social protection institutions, and advocacy at national and local levels.",
+    },
+  },
+  {
+    slug: "central-east-resilience",
+    date: "15.01.2025",
+    status: "active" as const,
+    category: "humanitarian",
+    tags: { uk: ["Стійкість", "Захист"], en: ["Resilience", "Protection"] },
+    title: {
+      uk: "Посилення стійкості та захист постраждалих від конфлікту осіб, громад і систем у центрі та на сході України",
+      en: "Strengthening resilience and protection of conflict-affected people, communities, and systems in central and eastern Ukraine",
+    },
+    summary: {
+      uk: "Комплексна підтримка громад центру та сходу: захист, гуманітарна допомога та зміцнення місцевих систем.",
+      en: "Comprehensive support for communities in the center and east: protection, humanitarian aid, and stronger local systems.",
+    },
+  },
+];
+
+export const tenders = [
+  {
+    date: "13.08.2026",
+    status: "active" as const,
+    title: {
+      uk: "Відкритий тендер на закупівлю послуг ФОП з питань запобігання гендерно зумовленому насильству",
+      en: "Open tender for individual entrepreneur services on preventing gender-based violence",
+    },
+  },
+  {
+    date: "13.08.2026",
+    status: "active" as const,
+    title: {
+      uk: "Відкритий тендер на закупівлю послуг ФОП із забезпечення безпеки та моніторингу ризиків",
+      en: "Open tender for individual entrepreneur services on security and risk monitoring",
+    },
+  },
+  {
+    date: "13.08.2026",
+    status: "active" as const,
+    title: {
+      uk: "Тендер на координацію надання благодійної допомоги в Харківській області",
+      en: "Tender for coordinating charitable assistance in Kharkiv oblast",
+    },
+  },
+  {
+    date: "13.08.2026",
+    status: "active" as const,
+    title: {
+      uk: "Закупівля послуг з оренди конференц-залу, кейтерингу та проживання для форуму в Черкасах",
+      en: "Procurement of conference hall rental, catering, and accommodation for a forum in Cherkasy",
+    },
+  },
+  {
+    date: "12.08.2026",
+    status: "active" as const,
+    title: {
+      uk: "Відкритий тендер на закупівлю послуг з відеозйомки та монтажу",
+      en: "Open tender for video filming and editing services",
+    },
+  },
+  {
+    date: "30.07.2026",
+    status: "archived" as const,
+    title: {
+      uk: "Рамкові угоди на закупівлю послуг ФОП з дизайну",
+      en: "Framework agreements for individual entrepreneur design services",
+    },
+  },
+];
+
+export const partners = [
+  { name: "Міністерство національної єдності України", href: "https://unity.gov.ua" },
+  { name: "Міністерство цифрової трансформації України", href: "https://thedigital.gov.ua" },
+  { name: "UNHCR", href: "https://www.unhcr.org" },
+  { name: "IREX", href: "https://www.irex.org" },
+  { name: "EU", href: "https://european-union.europa.eu" },
+  { name: "UHF", href: "https://www.unocha.org" },
+  { name: "NRC", href: "https://www.nrc.no" },
+  { name: "CARE", href: "https://www.care-international.org" },
+  { name: "People in Need", href: "https://www.peopleinneed.net" },
+  { name: "ACTED", href: "https://www.acted.org" },
+  { name: "Choose Love", href: "https://chooselove.org" },
+  { name: "Global Medic", href: "https://globalmedic.ca" },
+  { name: "PAH", href: "https://www.pah.org.pl" },
+  { name: "Міжнародний фонд «Відродження»", href: "https://www.irf.ua" },
+  { name: "Омбудсман України", href: "https://www.ombudsman.gov.ua" },
+  { name: "Посольство США в Україні", href: "https://ua.usembassy.gov" },
+  { name: "Посольство Великої Британії в Україні", href: "https://www.gov.uk/world/ukraine" },
+  { name: "Консорціум реагування", href: "https://r2p.org.ua" },
+];
+
+export const accounts = [
+  {
+    currency: "GBP",
+    company: "CO CF SSS",
+    iban: "UA423052990000026003036806869",
+    bank: 'JSC CB "PRIVATBANK", 1D Hrushevskoho Str., Kyiv, 01001, Ukraine',
+    swift: "PBANUA2X",
+  },
+  {
+    currency: "EUR",
+    company: "CO CF SSS",
+    iban: "UA793052990000026008026812802",
+    bank: 'JSC CB "PRIVATBANK", 1D Hrushevskoho Str., Kyiv, 01001, Ukraine',
+    swift: "PBANUA2X",
+  },
+];
+
+export const copy = {
+  uk: {
+    orgShort: "БО «ССС»",
+    orgName: "Благодійна організація «Благодійний фонд «Стабілізейшен суппорт сервісез»",
+    tagline: "Працюємо над подоланням соціальних наслідків війни.",
+    supportUs: "Підтримати нас",
+    joinUs: "Приєднатися до нас",
+    search: "Пошук",
+    searchPlaceholder: "Введіть запит",
+    moreAbout: "Більше про фонд",
+    resultsTitle: "Результати роботи фонду з початку повномасштабного вторгнення в Україну станом на липень 2026",
+    complainTitle: "Поскаржитися на порушення",
+    complainText: "Надішліть нам повідомлення, якщо ви побачили правопорушення чи зловживання владою під час надання гуманітарної допомоги.",
+    complainBtn: "Скарги і пропозиції",
+    legalTitle: "Отримати юридичну консультацію",
+    legalText: "Щоб отримати юридичну консультацію, заповніть коротку форму звернення.",
+    legalLink: "Запит на консультації для жителів Запорізької, Миколаївської та Херсонської областей",
+    latest: "Останні публікації",
+    allNews: "Усі новини",
+    mapTitle: "Наша діяльність по всій Україні",
+    mission:
+      "Місія організації — розбудова спроможності уряду та громад шляхом створення інноваційних інструментів подолання соціальних криз і відповіді на виклики, зокрема спричинені війною.",
+    projectsTitle: "Наші проєкти та програми",
+    allProjects: "Усі проєкти та програми",
+    ctaTitle: "Ти можеш стати частиною змін",
+    ctaText: "Підтримай гуманітарну допомогу, приєднуйся до команди або стань партнером фонду.",
+    nav: {
+      about: "Про фонд",
+      who: "Хто ми",
+      history: "Історія фонду",
+      policies: "Наші політики",
+      partners: "Партнери",
+      tenders: "Тендери та вакансії",
+      reports: "Звіти",
+      support: "Підтримати",
+      projects: "Проєкти та програми",
+      materials: "Корисні матеріали",
+      news: "Новини",
+      idp: "Ради ВПО",
+      contact: "Контакти",
+    },
+    footerSocial: "Соціальні мережі",
+    footerEmail: "Електронна адреса",
+    privacy: "Політика конфіденційності",
+    copyright: "© 2026 Благодійний фонд «Стабілізейшен Суппорт Сервісез». Усі права захищені.",
+    active: "Активний",
+    completed: "Завершений",
+    archived: "Архівний",
+    readMore: "Читати далі",
+    back: "Назад",
+    send: "Надіслати",
+    sent: "Дякуємо. Повідомлення збережено локально як демонстрація форми.",
+    aboutEyebrow: "Хто ми",
+    aboutLead:
+      "Українська благодійна організація, що з 2016 року допомагає долати соціальні наслідки війни та надає всебічну підтримку внутрішньо переміщеним людям.",
+    aboutP1:
+      "Ми надаємо гуманітарну та правову допомогу, здійснюємо ремонт пошкодженого житла і соціальних установ, зміцнюємо систему соціального захисту та розвиваємо мережу Рад ВПО, започатковану фондом у 2019–2020 роках.",
+    aboutP2:
+      "Наша діяльність охоплює всю країну. Ми зосереджені на відновленні постраждалих громад і покращенні доступу до соціальних послуг для найбільш вразливих людей.",
+    whatWeDo: "Що ми робимо",
+    areas: [
+      { title: "Гуманітарна допомога", text: "Базові потреби ВПО та жителів прифронтових громад, швидке реагування на кризи та довгострокові гуманітарні програми." },
+      { title: "Відновлення громад", text: "Ініціативи соціальної згуртованості, участь молоді та розвиток громадянського суспільства." },
+      { title: "Адвокація", text: "Захист прав ВПО, людей, які повертаються, і всіх, хто постраждав від війни, на регіональному та національному рівнях." },
+      { title: "Правопросвітництво", text: "Підвищення обізнаності про громадянські права, гендерну рівність і демократичні цінності." },
+      { title: "Ради ВПО", text: "Посилення та розширення мережі рад, навчання нових членів і розвиток методик їхньої роботи." },
+      { title: "Система соцзахисту", text: "Інституційна, консультативна та технічна підтримка державних установ соціального захисту." },
+    ],
+    historyTitle: "Історія фонду",
+    historyLead: "Від ініціативної групи 2015 року — до національної мережі підтримки людей, постраждалих від війни.",
+    idpTitle: "Ради ВПО",
+    idpLead: "Консультативно-дорадчі органи, які посилюють голос переселенок і переселенців у громадах.",
+    idpP1:
+      "У 2014 році майже 300 тисяч українців мусили покинути домівки. Після початку повномасштабної війни кількість ВПО стрімко зросла: на початок 2025 року зареєстровано понад 4,6 млн внутрішньо переміщених осіб.",
+    idpP2:
+      "Концепцію Рад ВПО розробила команда фонду у 2019 році. Станом на початок 2025 року в Україні працює понад 800 рад. Їхню роботу регулює Примірне положення, затверджене постановою КМУ від 02.08.2023 № 812.",
+    idpTasks: [
+      "Брати участь у реалізації регіональної політики захисту прав і інтересів ВПО",
+      "Сприяти громадам у розвитку механізмів адаптації та інтеграції переселенців",
+      "Досліджувати потреби ВПО і адвокатувати рішення, які ці потреби задовольняють",
+    ],
+    supportTitle: "Підтримати нас",
+    supportLead: "Підтримка цивільного населення — наш другий фронт. Станьте нашими союзниками.",
+    supportP1:
+      "Команда фонду — майже 200 відданих людей в усіх регіонах України. Ми маємо досвід координації гуманітарних операцій з 2015 року.",
+    supportP2:
+      "Наші партнери — десятки міжнародних організацій і волонтерів. Будь ласка, зробіть внесок. Ваша допомога має значення. Напишіть нам, якщо хочете волонтерити: info@sss-ua.org.",
+    bankTitle: "Реквізити",
+    copyIban: "Скопіювати IBAN",
+    copied: "Скопійовано",
+    joinTitle: "Тендери та вакансії",
+    joinLead: "Приєднуйтесь до команди, беріть участь у тендерах або підтримайте фонд іншим способом.",
+    contactTitle: "Контакти",
+    contactLead: "Напишіть нам — ми відповімо якнайшвидше.",
+    formName: "Як вас звати",
+    formEmail: "Email",
+    formPhone: "Номер телефону",
+    formTopic: "Тема",
+    formRegion: "Область",
+    formCity: "Населений пункт",
+    formMessage: "Коментар або повідомлення",
+    partnersTitle: "Партнери фонду",
+    reportsTitle: "Звіти",
+    reportsLead: "Установчі документи, податкові та аудиторські звіти фонду.",
+    founding: "Установчі документи",
+    tax: "Податкові звіти",
+    audit: "Звіти незалежних аудиторів",
+    policiesTitle: "Наші політики",
+    policiesLead: "У своїй діяльності фонд спирається на Кодекс етики, гендерну політику, політичну нейтральність і політику безпеки.",
+    materialsTitle: "Корисні матеріали",
+    filterAll: "Усі",
+    filterHumanitarian: "Гуманітарне реагування",
+    filterAdvocacy: "Розвиток і адвокація",
+    filterEducation: "Освіта та геймифікація",
+    empty: "Нічого не знайдено",
+    notFound: "Сторінку не знайдено",
+    home: "На головну",
+    cookieText: "Ми використовуємо файли cookie, щоб зробити сайт зручнішим.",
+    cookieAccept: "Прийняти",
+    cookieDecline: "Відхилити",
+  },
+  en: {
+    orgShort: "CO “SSS”",
+    orgName: "Charitable organization “Charity Foundation “Stabilization Support Services”",
+    tagline: "We are working to overcome the social consequences of the war.",
+    supportUs: "Support us",
+    joinUs: "Join us",
+    search: "Search",
+    searchPlaceholder: "Enter your query",
+    moreAbout: "More about the fund",
+    resultsTitle: "Results of the Foundation’s work since the beginning of the full-scale invasion of Ukraine as of July 2026",
+    complainTitle: "Complain about violations",
+    complainText: "Send us a message if you have seen violations or abuses of power during the provision of humanitarian aid.",
+    complainBtn: "Complaints and suggestions",
+    legalTitle: "Get a legal consultation",
+    legalText: "To receive a legal consultation, fill out the short request form.",
+    legalLink: "Request for advice for residents of Zaporizhzhia, Mykolaiv, and Kherson oblasts",
+    latest: "Recent publications",
+    allNews: "All news",
+    mapTitle: "Our activities throughout Ukraine",
+    mission:
+      "The mission of the organization is to strengthen the capacity of government and communities by creating innovative tools to overcome social crises and respond to challenges, including those caused by war.",
+    projectsTitle: "Our projects and programs",
+    allProjects: "All projects and programs",
+    ctaTitle: "You can be part of the change",
+    ctaText: "Support humanitarian aid, join the team, or become a partner of the Foundation.",
+    nav: {
+      about: "About the fund",
+      who: "Who we are",
+      history: "History",
+      policies: "Our policies",
+      partners: "Partners",
+      tenders: "Tenders and vacancies",
+      reports: "Reports",
+      support: "Support us",
+      projects: "Projects and programs",
+      materials: "Useful materials",
+      news: "News",
+      idp: "IDP Councils",
+      contact: "Contacts",
+    },
+    footerSocial: "Social media",
+    footerEmail: "Email",
+    privacy: "Privacy policy",
+    copyright: "© 2026 Charity Foundation “Stabilization Support Services”. All rights reserved.",
+    active: "Active",
+    completed: "Completed",
+    archived: "Archived",
+    readMore: "Read more",
+    back: "Back",
+    send: "Send",
+    sent: "Thank you. The message was saved locally as a form demonstration.",
+    aboutEyebrow: "Who we are",
+    aboutLead:
+      "A Ukrainian charitable organization that has been helping address the social consequences of war and supporting internally displaced people since 2016.",
+    aboutP1:
+      "We provide humanitarian and legal assistance, repair damaged housing and social institutions, strengthen the social protection system, and develop the IDP Council network initiated by the Foundation in 2019–2020.",
+    aboutP2:
+      "Our work spans the entire country. We focus on recovering war-affected communities and improving access to social services for the most vulnerable people.",
+    whatWeDo: "What we do",
+    areas: [
+      { title: "Humanitarian assistance", text: "Basic needs of IDPs and frontline communities, rapid crisis response, and longer-term humanitarian programs." },
+      { title: "Community recovery", text: "Initiatives for social cohesion, youth participation, and civil society development." },
+      { title: "Advocacy", text: "Defending the rights of IDPs, returnees, and all those affected by war at regional and national levels." },
+      { title: "Legal awareness", text: "Raising awareness of civil rights, gender equality, and democratic values." },
+      { title: "IDP Councils", text: "Strengthening and expanding the council network, training new members, and developing working methods." },
+      { title: "Social protection system", text: "Institutional, advisory, and technical support for government social protection institutions." },
+    ],
+    historyTitle: "Foundation history",
+    historyLead: "From an initiative group in 2015 to a nationwide support network for people affected by war.",
+    idpTitle: "IDP Councils",
+    idpLead: "Advisory bodies that amplify the voice of displaced women and men in communities.",
+    idpP1:
+      "In 2014 almost 300,000 Ukrainians had to leave their homes. After the full-scale war the number of IDPs grew rapidly: more than 4.6 million internally displaced people were registered at the beginning of 2025.",
+    idpP2:
+      "The IDP Council concept was developed by the Foundation’s team in 2019. As of early 2025 more than 800 councils operate in Ukraine. Their work is regulated by the Model Regulation approved by CMU Resolution No. 812 of 2 August 2023.",
+    idpTasks: [
+      "Take part in implementing regional policy to protect IDP rights and interests",
+      "Help communities develop mechanisms for adaptation and integration of displaced people",
+      "Study IDP needs and advocate for decisions that meet those needs",
+    ],
+    supportTitle: "Support us",
+    supportLead: "Supporting civilians is our second front. Become our allies.",
+    supportP1:
+      "The Foundation team is almost 200 dedicated people in all regions of Ukraine. We have coordinated humanitarian operations since 2015.",
+    supportP2:
+      "Our partners are dozens of international organizations and volunteers. Please donate. Your contribution matters. Write to us if you would like to volunteer: info@sss-ua.org.",
+    bankTitle: "Bank details",
+    copyIban: "Copy IBAN",
+    copied: "Copied",
+    joinTitle: "Tenders and vacancies",
+    joinLead: "Join the team, take part in tenders, or support the Foundation in another way.",
+    contactTitle: "Contacts",
+    contactLead: "Write to us — we will reply as soon as we can.",
+    formName: "Your name",
+    formEmail: "Email",
+    formPhone: "Phone number",
+    formTopic: "Subject",
+    formRegion: "Oblast",
+    formCity: "Locality",
+    formMessage: "Comment or message",
+    partnersTitle: "Foundation partners",
+    reportsTitle: "Reports",
+    reportsLead: "Founding documents, tax filings, and independent audit reports.",
+    founding: "Founding documents",
+    tax: "Tax reports",
+    audit: "Independent auditor reports",
+    policiesTitle: "Our policies",
+    policiesLead: "The Foundation’s work is grounded in the Code of Ethics, gender policy, political neutrality, and security policy.",
+    materialsTitle: "Useful materials",
+    filterAll: "All",
+    filterHumanitarian: "Humanitarian response",
+    filterAdvocacy: "Development and advocacy",
+    filterEducation: "Education and gamification",
+    empty: "Nothing found",
+    notFound: "Page not found",
+    home: "Back home",
+    cookieText: "We use cookies to make the site easier to use.",
+    cookieAccept: "Accept",
+    cookieDecline: "Decline",
+  },
+} as const;
